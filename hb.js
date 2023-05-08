@@ -2,7 +2,7 @@ const number = document.querySelector(".number");
 const valueNumber = Number(number.getAttribute("data-value"));
 
 let counter = 0;
-const myTimeout = setTimeout(myGreeting, 5000);
+const myTimeout = setTimeout(myGreeting, 10000);
 
 function myGreeting() {
     console.log("came")
@@ -16,8 +16,10 @@ function myGreeting() {
 const time = () => {
 	setInterval(() => {
 		if (counter !== valueNumber) {
-			counter++;
-			number.innerHTML = `${counter}%`;
+			counter+=0.5;
+            if(parseInt(counter)==counter){
+                number.innerHTML = `${counter}%`;
+            }
 		}
 	}, 50);
 };
