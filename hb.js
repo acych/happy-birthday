@@ -16,9 +16,10 @@ function myGreeting() {
 const time = () => {
 	setInterval(() => {
 		if (counter !== valueNumber) {
-			counter+=0.25;
+			counter+=0.5;
             if(parseInt(counter)==counter){
-                number.innerHTML = `${counter}%`;
+			number.innerHTML = `${counter}%`;
+
             }
 		}
 	}, 50);
