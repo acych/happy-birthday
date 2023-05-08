@@ -42,7 +42,7 @@
   stroke: #9450f2;
   stroke-dasharray: 820;
   stroke-dashoffset: 820;
-  animation: barFill 10s linear forwards;
+  animation: barFill 5s linear forwards;
   transform: rotate(-90deg);
 }
 @keyframes barFill {
