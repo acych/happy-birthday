@@ -2,7 +2,7 @@ const number = document.querySelector(".number");
 const valueNumber = Number(number.getAttribute("data-value"));
 
 let counter = 0;
-const myTimeout = setTimeout(myGreeting, 5000);
+const myTimeout = setTimeout(myGreeting, 10000);
 
 function myGreeting() {
     console.log("came")
